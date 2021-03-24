@@ -22,11 +22,11 @@ describe('isPalindrome', () => {
   it('",ii." should be palindrome', () => {
     expect(isPalindrome(',ii.')).toBe(true);
   });
-  it('",ia #iA." should be palindrome', () => {
+  it('",ia #Ai." should be palindrome', () => {
     expect(isPalindrome(',ia #Ai.')).toBe(true);
   });
 
-  it('",ia #iB." should not be palindrome', () => {
-    expect(isPalindrome(',ia #iB.')).toBe(false);
+  it('",ia #Bi." should not be palindrome', () => {
+    expect(isPalindrome(',ia #Bi.')).toBe(false);
   });
 });

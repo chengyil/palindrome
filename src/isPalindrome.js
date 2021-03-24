@@ -8,7 +8,7 @@ function isPalindromeStep(word, lowerIndex, upperIndex) {
   } else if (!isAlphaNumeric(word[lowerIndex])) {
     return isPalindromeStep(word, lowerIndex + 1, upperIndex);
   } else if (!isAlphaNumeric(word[upperIndex])) {
-    return isPalindromeStep(word, lowerIndex + 1, upperIndex);
+    return isPalindromeStep(word, lowerIndex, upperIndex -1);
   } else {
     return caseInsensitiveEqual(word[lowerIndex], word[upperIndex]) &&
     isPalindromeStep(word, lowerIndex + 1, upperIndex - 1);
